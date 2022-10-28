@@ -21,11 +21,15 @@ function hiddenMenu(){
 function showMenu(){
     var menu = document.querySelector('.menu-lateral');
     var burguer = document.querySelector('.nav .menu');
-    burguer.style.marginLeft = '31%';
-    menu.style.left = '0';
-    if(screen.width == 425){
-        burguer.style.marginLeft = '70%';
+    if (screen.width <= 425) {
+      burguer.style.marginLeft = "68%";
+      menu.style.left = "0";
+    }else{
+        burguer.style.marginLeft = "31%";
+        menu.style.left = "0";
     }
+   
+    
 }
 function Link(){
     var link = document.querySelectorAll('.menu-lateral a');
