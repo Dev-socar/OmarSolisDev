@@ -47,6 +47,20 @@ var Works = [
     ]    
 },
 {
+    "title":"BlogCafé",
+    "type":"Sitio Web Blog",
+    "img":"resources/BlogPortada.png",
+    "description":`Blog Café es un proyecto el cual realice para fortalecer mis habilidades de html, js y css.
+    Todo el sitio web es responsivo para cualquier dispositivo móvil.`,
+    "date": "28/10/2022",
+    "url":"https://relaxed-alpaca-2c5196.netlify.app/index.html",
+    "imgs":[
+        "resources/Blog2.png",
+        "resources/Blog1.png",
+        "resources/Blog3.png"
+    ]    
+},
+{
     "title":"TarjetasMex",
     "type":"Sitio E-commerce",
     "img":"resources/tarjeta.png",

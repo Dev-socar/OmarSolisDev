@@ -50,6 +50,20 @@ var Works = [
     ]    
 },
 {
+    "title":"BlogCafé",
+    "type":"Blog Web Site",
+    "img":"resources/BlogPortada.png",
+    "description":`Blog Café is a project which I did to strengthen my html, js and css skills.
+     The entire website is responsive for any mobile device.`,
+    "date": "28/10/2022",
+    "url":"https://relaxed-alpaca-2c5196.netlify.app/index.html",
+    "imgs":[
+        "resources/Blog2.png",
+        "resources/Blog1.png",
+        "resources/Blog3.png"
+    ]    
+},
+{
     "title":"TarjetasMex",
     "type":"E-commerce website",
     "img":"resources/tarjeta.png",
