@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/logo.png" sizes="50x50">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Omar Solís</title>
+</head>
+<body>
+    
+    <div class="modal-contenedor" id="modal">
+        <div class="close-modal"><i class="fa-solid fa-xmark" onclick="hiddenModal()"></i></div>
+    </div>
+    <!--Nav-->
+    <nav class="nav" id="home">
+        <div class="menu"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        <div class="menu-translate">
+            <a href="index.html" id="eng" >ENG </a>
+            <span>-</span>
+            <a href="esp-Index.html" id="esp"> ESP</a>
+        </div>
+    </nav>
+    <!--Menu side-->
+    <div class="menu-lateral" id="menuLateral">
+        <div class="close"><i class="fa-solid fa-xmark" onclick="hiddenMenu()"></i></div>
+        <a href="#home" onclick="Link()">Inicio</a>
+        <a href="#skills" onclick="Link()">Habilidades</a>
+        <a href="#work" onclick="Link()">Trabajos Recientes</a>
+        <a href="#contact" onclick="Link()">Contacto</a>
+    </div>
+    <!--Home-->
+    <section class="contenedor-presentacion" id="home">
+            <div class="presentacion-top">
+                <p>Diseñador, desarrollador Frontend y Backend.
+                    Codifico cosas bellamente simples y me encanta lo que hago.
+                </p>
+                <img src="resources/Web Developer_Isometric.svg" alt="imagen ilustrativa">
+            </div>
+            <div class="presentacion-bottom">
+                <div class="burbujas">
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                    <div class="burbuja"></div>
+                </div>
+                <p>Hola soy Omar Solís, gusto en conocerte.</p>
+                <div class="presentacion-img"></div>
+                <p class="presentacion-txt">
+                    Desde que comencé este viaje como desarrollador web independiente hace 2 años,
+                      He realizado trabajos para empresas inmobiliarias y sitios de comercio electrónico. Soy una persona entregada a su trabajo, soy de confianza
+                      Siempre busco mejorar mis habilidades y siempre busco dar lo mejor y
+                      un excelente servicio
+                </p>
+            </div>
+    </section>
+    <!--Skills-->
+    <section class="contenedor-skill contenedor-skill-esp" id="skills">
+        <div class="item-skill">
+            <p class="title-skill">Desarrollador Frontend</p>
+            <div class="item-img">
+                <i class="fa-solid fa-display"></i>
+            </div>
+            <p class="subtext-skill">Me gusta codificar cosas desde cero, es más divertido.</p>
+            <div class="tecnologias-skills">
+                <p>Lenguajes que hablo:</p>
+                <div class="lenguajes">
+                    <i class="fa-brands fa-js" title="js"></i>
+                    <i class="fa-brands fa-html5" title="html"></i>
+                    <i class="fa-brands fa-css3" title="css"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item-skill">
+            <p class="title-skill">Desarrollador Backend</p>
+            <div class="item-img">
+                <i class="fa-solid fa-terminal"></i>
+            </div>
+            <p class="subtext-skill">Es importante realizar CRUD y consumir APIs.</p>
+            <div class="tecnologias-skills">
+                <p>Lenguajes que hablo:</p>
+                <div class="lenguajes">
+                    <i class="fa-brands fa-php" title="php"></i>
+                    <i class="fa-brands fa-node" title="Node js"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item-skill">
+            <p class="title-skill">Designer</p>
+            <div class="item-img">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <p class="subtext-skill">El diseño visual y no visual de los sitios web es importante.</p>
+            <div class="tecnologias-skills">
+                <p>Herramientas de desarrollo:</p>
+                <div class="lenguajes">
+                    <i class="fa-brands fa-figma" title="Figma"></i>
+                    <i class="fa-solid fa-database" title="DataBase"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Recent Work-->
+    <section class="contenedor-work" id="work">
+        <img src="resources/Coding _Isometric.svg" alt="coding" class="work-svg right">
+        <img src="resources/Coding _Isometric.svg" alt="coding" class="work-svg">
+        <p class="title-work">Mi Trabajo Reciente</p>
+        <p class="subtitle-work">Aquí hay algunos proyectos anteriores en los que he trabajado.</p>
+        <div class="grid-work" id="grid"></div>
+    </section>
+    <!--Contact-->
+    <section class="contenedor-contact" id="contact">
+        <p class="contact-title">Contactame</p>
+        <div class="contenedor-social">
+            <a href="https://www.linkedin.com/in/omar-fernando-505a041a3/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/Dev-socar"><i class="fa-brands fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5219831247628&text=Hola soy "><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <section class="contenedor-formulario">
+        <p class="title-formulario">Empezar Proyecto</p>
+        <p class="subtitle-formulario">¿Interesado en trabajar juntos? Vamos a hacerlo!</p>
+        <form id="form" class="formulario-contacto">
+            <div class="formulario-top">
+                <div class="formulario-item">
+                    <label for="name">Nombre</label>
+                    <input name="name" type="text" placeholder="Ejemplo: Omar Solís" required>
+                </div>
+                <div class="formulario-item">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Ejemplo: omar@gmail.com" required>
+                </div>
+                <div class="formulario-item">
+                    <label for="project">Tipo de Proyecto</label>
+                    <select name="project" id="project" required>
+                        <option value="">Seleccionar</option>
+                        <option value="landingPage">LandingPage</option>
+                        <option value="webSite">Sitio Web</option>
+                        <option value="ecomerce">E-comerce</option>
+                        <option value="webApp">Aplicación Web</option>
+                    </select>
+                </div>
+                <div class="formulario-item">
+                    <label for="budget">Presupuesto</label>
+                    <select name="budget" id="budget" required>
+                        <option value="">Seleccionar</option>
+                        <option value="primero">$0 - $3,000 MXN</option>
+                        <option value="segundo">$3,000 - $6,000 MXN</option>
+                        <option value="tercero">Cotización</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formulario-botom">
+                <label for="details">Detalles Adicionales</label>
+                <textarea name="details" id="details" cols="25" rows="10" required></textarea>
+            </div>
+            <input type="submit" id="button" class="btn-submit" value="Enviar" >
+        </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">emailjs.init('S8qcj8doRJEIE1j4K')</script>
+        </section>
+    </section>
+    <!--Footer-->
+    <footer class="contenedor-footer">
+        <p class="title-footer">
+            Viviendo, aprendiendo y subiendo de nivel un día a la vez.
+        </p>
+        <p class="copyright-footer">&copy; 2022 Omar Fernando Solís Carvajal.</p>
+    </footer>
+<script src="js/app.js"></script>
+<script src="js/works-esp.js"></script>
+</body>
+<script>
+    const btn = document.getElementById('button');
+    
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_mmcnqem';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('Mensaje enviado con éxito!');
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+</html>
